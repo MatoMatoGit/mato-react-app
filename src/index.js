@@ -14,23 +14,14 @@ client
     .query({
         query: gql`
 {
-  allSensors {
-    edges {
-      node {
-        id
-        hash
-      }
-    }
-  }
-  
-  allMeasurements {
+  allMeasurements(sort: CREATED_ON_SERVER_ASC, last:10) {
     edges {
       node {
         id
         data
-        createdOn
+        sensorHash
+        createdOnServer
         uuid
-        sensorId
       }
     }
   }
