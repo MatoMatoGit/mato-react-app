@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="097fb12a-4a49-4ce1-afaf-12d6ddf06e46" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +25,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
@@ -92,7 +92,7 @@
       <workItem from="1572250265616" duration="19000" />
       <workItem from="1575197585229" duration="1015000" />
       <workItem from="1575314551931" duration="315000" />
-      <workItem from="1577024379390" duration="85000" />
+      <workItem from="1577024379390" duration="660000" />
     </task>
     <servers />
   </component>
@@ -111,5 +111,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="471" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1577048176739">
+      <screen x="0" y="23" width="1623" height="1027" />
+    </state>
+    <state x="471" y="369" key="com.intellij.ide.util.TipDialog/0.23.1623.1027@0.23.1623.1027" timestamp="1577048176739" />
   </component>
 </project>
