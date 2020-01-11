@@ -1,38 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 import ApolloClient from 'apollo-boost';
-// import {gql} from "apollo-boost";
-import gql from 'graphql-tag';
-import { useMutation } from '@apollo/react-hooks';
+import {HttpLink} from 'apollo-link-http';
+import {InMemoryCache} from 'apollo-cache-inmemory';
+import {ApolloProvider} from 'react-apollo';
+import {HashRouter, Route} from 'react-router-dom';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
+import ValueChart from './components/ValueChart';
+
 const client = new ApolloClient({
     uri: 'http://localhost:5000/graphql',
+    link: new HttpLink({
+        credentials: 'same-origin'
+    }),
+    cache: new InMemoryCache(),
+    dataIdFromObject: o => o.id
 });
 
-client
-    .query({
-        query: gql`
-{
-  allMeasurements(sort: CREATED_ON_SERVER_ASC, last:10) {
-    edges {
-      node {
-        id
-        data
-        sensorHash
-        createdOnServer
-        uuid
-      }
-    }
-  }
-}
-`
-    })
-    .then(result => console.log(result));
+const Root = () => {
+    return (
+        <MuiThemeProvider>
+            <ApolloProvider client={client}>
+                <HashRouter>
+                    <div>
+                        <Route exact path="/" component={ValueChart}/>
+                    </div>
+                </HashRouter>
+            </ApolloProvider>
+        </MuiThemeProvider>
+    );
+};
 
-ReactDOM.render(<App/>, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<Root/>, document.querySelector('#root'));

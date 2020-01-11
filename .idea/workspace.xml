@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="097fb12a-4a49-4ce1-afaf-12d6ddf06e46" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/mutations/CreateMeasurement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/queries/ValueSpecific.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ValueChart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +47,13 @@
     <property name="nodejs.mocha.mocha_node_package_dir" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/queries" />
+      <recent name="$PROJECT_DIR$/src/components" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="js.build_tools.grunt">
@@ -93,6 +106,9 @@
       <workItem from="1575197585229" duration="1015000" />
       <workItem from="1575314551931" duration="315000" />
       <workItem from="1577024379390" duration="660000" />
+      <workItem from="1577048162846" duration="629000" />
+      <workItem from="1578229702164" duration="259000" />
+      <workItem from="1578742128273" duration="3571000" />
     </task>
     <servers />
   </component>
@@ -113,9 +129,22 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="905" y="336" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578742854646">
+      <screen x="0" y="23" width="1622" height="1027" />
+    </state>
+    <state x="905" y="336" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1622.1027@0.23.1622.1027" timestamp="1578742854646" />
+    <state x="100" y="123" width="1423" height="827" key="DiffContextDialog" timestamp="1578743992993">
+      <screen x="0" y="23" width="1622" height="1027" />
+    </state>
+    <state x="100" y="123" width="1423" height="827" key="DiffContextDialog/0.23.1622.1027@0.23.1622.1027" timestamp="1578743992993" />
+    <state x="100" y="123" width="1423" height="827" key="DiffContextDialog/0.23.1623.1027@0.23.1623.1027" timestamp="1577048298400" />
     <state x="471" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1577048176739">
       <screen x="0" y="23" width="1623" height="1027" />
     </state>
     <state x="471" y="369" key="com.intellij.ide.util.TipDialog/0.23.1623.1027@0.23.1623.1027" timestamp="1577048176739" />
+    <state x="881" y="187" width="670" height="676" key="search.everywhere.popup" timestamp="1578742819247">
+      <screen x="0" y="23" width="1622" height="1027" />
+    </state>
+    <state x="881" y="187" width="670" height="676" key="search.everywhere.popup/0.23.1622.1027@0.23.1622.1027" timestamp="1578742819247" />
   </component>
 </project>
