@@ -10,7 +10,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import ValueChart from './components/ValueChart';
 
 const client = new ApolloClient({
-    uri: 'http://localhost:5000/graphql',
+    uri: 'http://192.168.2.7:5000/graphql',
     link: new HttpLink({
         credentials: 'same-origin'
     }),
