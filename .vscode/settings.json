@@ -1,0 +1,14 @@
+{
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"files.insertFinalNewline": true,
+	"files.autoSave": "onFocusChange",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
+		"source.fixAll.tslint": true,
+		"source.fixAll.stylelint": true
+	},
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact"
+	}
+}

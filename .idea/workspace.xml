@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="097fb12a-4a49-4ce1-afaf-12d6ddf06e46" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ValueChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ValueChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +106,8 @@
       <workItem from="1578229702164" duration="259000" />
       <workItem from="1578742128273" duration="4429000" />
       <workItem from="1578855534837" duration="1787000" />
-      <workItem from="1578943065600" duration="3810000" />
+      <workItem from="1578943065600" duration="3950000" />
+      <workItem from="1578990541405" duration="66000" />
     </task>
     <servers />
   </component>
@@ -135,14 +132,15 @@
       <screen x="0" y="23" width="1622" height="1027" />
     </state>
     <state x="905" y="336" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1622.1027@0.23.1622.1027" timestamp="1578742854646" />
-    <state x="100" y="123" width="1423" height="827" key="DiffContextDialog" timestamp="1578946776540">
+    <state x="100" y="123" width="1423" height="827" key="DiffContextDialog" timestamp="1578947302842">
       <screen x="0" y="23" width="1622" height="1027" />
     </state>
-    <state x="100" y="123" width="1423" height="827" key="DiffContextDialog/0.23.1622.1027@0.23.1622.1027" timestamp="1578946776540" />
+    <state x="100" y="123" width="1423" height="827" key="DiffContextDialog/0.23.1622.1027@0.23.1622.1027" timestamp="1578947302842" />
     <state x="100" y="123" width="1423" height="827" key="DiffContextDialog/0.23.1623.1027@0.23.1623.1027" timestamp="1577048298400" />
-    <state x="471" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1578943088812">
-      <screen x="0" y="23" width="1622" height="1027" />
+    <state x="-1817" y="-5" key="com.intellij.ide.util.TipDialog" timestamp="1578990598021">
+      <screen x="-2560" y="-482" width="2560" height="1417" />
     </state>
+    <state x="-1817" y="-5" key="com.intellij.ide.util.TipDialog/-5120.-482.2560.1417/-2560.-482.2560.1417/0.23.1622.1027@-2560.-482.2560.1417" timestamp="1578990598021" />
     <state x="471" y="369" key="com.intellij.ide.util.TipDialog/0.23.1622.1027@0.23.1622.1027" timestamp="1578943088812" />
     <state x="471" y="369" key="com.intellij.ide.util.TipDialog/0.23.1623.1027@0.23.1623.1027" timestamp="1577048176739" />
     <state x="881" y="187" width="670" height="676" key="search.everywhere.popup" timestamp="1578947022882">
