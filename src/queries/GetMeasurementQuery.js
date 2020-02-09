@@ -1,8 +1,8 @@
 import gql from 'graphql-tag'
 
-export const GET_MEASUREMENT_QUERY = gql`
+const GET_MEASUREMENT_QUERY = gql`
 	query GetMeasurement($sensorHash: String!) {
-		allMeasurements {
+		allMeasurements(filters: { sensorHash: $sensorHash }) {
 			edges {
 				node {
 					id

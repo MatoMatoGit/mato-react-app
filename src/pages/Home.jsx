@@ -25,7 +25,7 @@ const Home = () => {
 				label="Sensor hash"
 				variant="outlined"
 			/>
-			<Button variant="contained" ntype="submit">
+			<Button variant="contained" type="submit">
 				Login
 			</Button>
 		</form>

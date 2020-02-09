@@ -1,7 +1,6 @@
 import gql from 'graphql-tag'
-import { Query } from 'react-apollo'
 
-export const GET_SENSOR_QUERY = gql`
+const GET_SENSOR_QUERY = gql`
 	query GetSensor($sensorHash: String!) {
 		allSensors(filters: { sensorHash: $sensorHash }) {
 			edges {
@@ -16,8 +15,4 @@ export const GET_SENSOR_QUERY = gql`
 	}
 `
 
-export class GetSensorQuery extends Query {
-	static defaultProps = {
-		query: GET_SENSOR_QUERY
-	}
-}
+export default GET_SENSOR_QUERY
