@@ -1,3 +1,4 @@
 import ValueChart from './ValueChart'
+import BrandBar from './BrandBar'
 
-export { ValueChart }
+export { ValueChart, BrandBar }
