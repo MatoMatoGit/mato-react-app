@@ -1,8 +1,8 @@
 import gql from 'graphql-tag'
 
 const GET_SENSOR_QUERY = gql`
-	query GetSensor($sensorHash: String!) {
-		allSensors(filters: { sensorHash: $sensorHash }) {
+	query {
+		allSensors {
 			edges {
 				node {
 					id

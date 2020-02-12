@@ -3,7 +3,7 @@ import { Navbar } from 'react-bootstrap'
 
 const BrandBar = () => {
 	return (
-		<Navbar bg="light">
+		<Navbar bg="light" style={{ marginBottom: '1rem' }}>
 			<Navbar.Brand href="/">
 				<img
 					alt=""

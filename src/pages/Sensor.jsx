@@ -1,26 +1,37 @@
 import React from 'react'
-import { useQuery } from '@apollo/react-hooks'
 import { useParams } from 'react-router-dom'
-import { ValueChart } from '../components'
-import GET_MEASUREMENT_QUERY from '../queries/GetMeasurementQuery'
+import { Moisture, Temperature, Light } from '../components'
+import SensorConfig from '../config/SensorConfig'
+import { useHistory } from 'react-router-dom'
+import { Grid, Button } from '@material-ui/core'
 
 const Sensor = () => {
 	let { sensorHash } = useParams()
-
-	const { loading, error, data } = useQuery(GET_MEASUREMENT_QUERY, {
-		variables: { sensorHash },
-		skip: !sensorHash,
-		pollInterval: 10000
-	})
-
-	if (loading) return 'Loading...'
-	if (error) return `Error! ${error.message}`
-
-	const formattedData = data.allMeasurements.edges.map(({ node }) => node)
+	const history = useHistory()
 
 	return (
 		<React.Fragment>
-			<ValueChart formattedData={formattedData} />
+			<Grid item container xs={12} style={{ marginBottom: '1rem' }}>
+				<Button
+					variant="contained"
+					color="primary"
+					type="submit"
+					style={{ width: '100%' }}
+					onClick={() => history.push('/')}
+				>
+					BACK
+				</Button>
+			</Grid>
+
+			<Grid item container xs={12}>
+				<h2 style={{ marginBottom: '1rem' }}>Sensor overzicht</h2>
+			</Grid>
+
+			<Grid item container xs={12}>
+				<Moisture sensorHash={sensorHash} SensorConfig={SensorConfig.MOIST} />
+				<Temperature sensorHash={sensorHash} SensorConfig={SensorConfig.TEMP} />
+				<Light sensorHash={sensorHash} SensorConfig={SensorConfig.LIGHT} />
+			</Grid>
 		</React.Fragment>
 	)
 }
