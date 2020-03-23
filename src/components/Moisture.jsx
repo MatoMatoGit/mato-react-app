@@ -47,6 +47,7 @@ const Moisture = ({ sensorHash, SensorConfig }) => {
 					formattedData={data.allMeasurements.edges.map(({ node }) => node)}
 					lowVal={lowValRaw.data.allMeasurements.edges.map(({ node }) => node)[0].data}
 					highVal={highValRaw.data.allMeasurements.edges.map(({ node }) => node)[0].data}
+					showDot={SensorConfig.showDot}
 				/>
 			)}
 		</React.Fragment>

@@ -1,10 +1,10 @@
 import React from 'react'
 import { useQuery } from '@apollo/react-hooks'
 import GET_MEASUREMENT_QUERY from '../queries/GetMeasurementQuery'
-import { LineChartMinMax } from '../components'
+import { LineChartMinMax } from '.'
 import { CircularProgress } from '@material-ui/core'
 
-const Temperature = ({ sensorHash, SensorConfig }) => {
+const Growth = ({ sensorHash, SensorConfig }) => {
 	const { loading, data, error } = useQuery(GET_MEASUREMENT_QUERY, {
 		variables: {
 			sensorHash: sensorHash,
@@ -18,7 +18,7 @@ const Temperature = ({ sensorHash, SensorConfig }) => {
 
 	return (
 		<React.Fragment>
-			<h5>Temperatuur</h5>
+			<h5>Growth</h5>
 
 			{loading ? (
 				<CircularProgress />
@@ -32,4 +32,4 @@ const Temperature = ({ sensorHash, SensorConfig }) => {
 	)
 }
 
-export default Temperature
+export default Growth

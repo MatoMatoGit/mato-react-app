@@ -25,6 +25,7 @@ const Light = ({ sensorHash, SensorConfig }) => {
 			) : (
 				<LineChartMinMax
 					formattedData={data.allMeasurements.edges.map(({ node }) => node)}
+					showDot={SensorConfig.showDot}
 				/>
 			)}
 		</React.Fragment>
