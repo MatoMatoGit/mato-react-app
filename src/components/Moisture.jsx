@@ -45,8 +45,16 @@ const Moisture = ({ sensorHash, SensorConfig }) => {
 			) : (
 				<LineChartMinMax
 					formattedData={data.allMeasurements.edges.map(({ node }) => node)}
-					lowVal={lowValRaw.data.allMeasurements.edges.map(({ node }) => node)[0].data}
-					highVal={highValRaw.data.allMeasurements.edges.map(({ node }) => node)[0].data}
+					lowVal={
+						!lowValRaw.error
+							? lowValRaw.data.allMeasurements.edges.map(({ node }) => node)[0].data
+							: null
+					}
+					highVal={
+						!lowValRaw.error
+							? highValRaw.data.allMeasurements.edges.map(({ node }) => node)[0].data
+							: null
+					}
 					showDot={SensorConfig.showDot}
 				/>
 			)}

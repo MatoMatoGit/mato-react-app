@@ -17,7 +17,7 @@ const LineChartMinMax = ({ formattedData, lowVal, highVal, showDot }) => {
 			<LineChart data={formattedData} margin={{ top: 5, right: 5, left: 0, bottom: 5 }}>
 				<XAxis dataKey="uuid" />
 				<YAxis dataKey="data" />
-				<CartesianGrid strokeDasharray="3 3" />
+				{showDot ? <CartesianGrid strokeDasharray="3 3" /> : null}
 				<Tooltip />
 				<Legend />
 				<Line

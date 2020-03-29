@@ -1,7 +1,7 @@
 const SensorConfig = {
 	MOIST: {
 		type: 'MOIST',
-		last: 256,
+		last: 672,
 		pollInterval: 10000,
 		showDot: false
 	},
