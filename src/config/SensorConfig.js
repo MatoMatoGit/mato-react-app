@@ -24,7 +24,7 @@ const SensorConfig = {
 		showDot: true
 	},
 	GROWTH_LONG_HISTORY: {
-		type: 'GROWTH_LONG_HISTORY',
+		type: 'GROWTH',
 		last: 672,
 		pollInterval: 10000,
 		showDot: false
