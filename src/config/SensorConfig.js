@@ -7,23 +7,17 @@ const SensorConfig = {
 	},
 	LIGHT: {
 		type: 'LIGHT',
-		last: 32,
+		last: 672,
 		pollInterval: 10000,
-		showDot: true
+		showDot: false
 	},
 	TEMP: {
 		type: 'TEMP',
-		last: 32,
+		last: 672,
 		pollInterval: 10000,
-		showDot: true
+		showDot: false
 	},
 	GROWTH: {
-		type: 'GROWTH',
-		last: 32,
-		pollInterval: 10000,
-		showDot: true
-	},
-	GROWTH_LONG_HISTORY: {
 		type: 'GROWTH',
 		last: 672,
 		pollInterval: 10000,
