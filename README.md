@@ -1,5 +1,14 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## How to add a sensor
+
+1. in src/components copy the temperature file and give it a new name (for the new type)
+2. Change the function name in the file (same as file name)
+3. Change the h5 title in the file
+4. Add the filename and directory to src/index.js
+5. Add the sensor to the SensorConfig
+6. add component to Pages/Sensor.jsx
+
 ## Available Scripts
 
 In the project directory, you can run:
