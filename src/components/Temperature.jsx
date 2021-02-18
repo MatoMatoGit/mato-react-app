@@ -18,7 +18,7 @@ const Temperature = ({ sensorHash, SensorConfig }) => {
 
 	return (
 		<React.Fragment>
-			<h5>Temperatuur</h5>
+			<h5>Temperature</h5>
 
 			{loading ? (
 				<CircularProgress />

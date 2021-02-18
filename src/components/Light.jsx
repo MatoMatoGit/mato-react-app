@@ -18,7 +18,7 @@ const Light = ({ sensorHash, SensorConfig }) => {
 
 	return (
 		<React.Fragment>
-			<h5>Licht</h5>
+			<h5>Light</h5>
 
 			{loading ? (
 				<CircularProgress />
