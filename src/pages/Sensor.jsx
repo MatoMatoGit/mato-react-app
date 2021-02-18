@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { Moisture, Temperature, Light, Growth } from '../components'
+import { Moisture, Temperature, Battery } from '../components'
 import SensorConfig from '../config/SensorConfig'
 import { useHistory } from 'react-router-dom'
 import { Grid, Button } from '@material-ui/core'
@@ -30,8 +30,7 @@ const Sensor = () => {
 			<Grid item container xs={12}>
 				<Moisture sensorHash={sensorHash} SensorConfig={SensorConfig.MOIST} />
 				<Temperature sensorHash={sensorHash} SensorConfig={SensorConfig.TEMP} />
-				<Light sensorHash={sensorHash} SensorConfig={SensorConfig.LIGHT} />
-				<Growth sensorHash={sensorHash} SensorConfig={SensorConfig.GROWTH} />
+				<Battery sensorHash={sensorHash} SensorConfig={SensorConfig.BAT} />
 			</Grid>
 		</React.Fragment>
 	)

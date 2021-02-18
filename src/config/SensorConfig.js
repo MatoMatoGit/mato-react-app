@@ -5,24 +5,18 @@ const SensorConfig = {
 		pollInterval: 10000,
 		showDot: false
 	},
-	LIGHT: {
-		type: 'LIGHT',
-		last: 672,
-		pollInterval: 10000,
-		showDot: false
-	},
 	TEMP: {
 		type: 'TEMP',
 		last: 672,
 		pollInterval: 10000,
 		showDot: false
 	},
-	GROWTH: {
-		type: 'GROWTH',
+	BAT: {
+		type: 'BAT',
 		last: 672,
 		pollInterval: 10000,
 		showDot: false
-	}
+	},
 }
 
 export default SensorConfig
